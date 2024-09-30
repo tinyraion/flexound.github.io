@@ -32,41 +32,41 @@ function createAudioHTML(path) {
   
   
   
-  function generateVariable(tableId) {
-    let table = document.getElementById(tableId);
-    let ext = ['.txt', '_maa2.wav', '_maa1.wav','_ldm.wav', '_tango.wav'];
+  // function generateVariable(tableId) {
+  //   let table = document.getElementById(tableId);
+  //   let ext = ['.txt', '_maa2.wav', '_maa1.wav','_ldm.wav', '_tango.wav'];
   
-    for (var i = 0; i < 9; i++) {
-      generateExampleRow(table.rows[1 + i], 'data/variable_length/' + i, ext, 0);
-    }
-  }
+  //   for (var i = 0; i < 9; i++) {
+  //     generateExampleRow(table.rows[1 + i], 'data/variable_length/' + i, ext, 0);
+  //   }
+  // }
   
   
-  function generatePrompting(tableId) {
-    let table = document.getElementById(tableId);
-    console.log("got table ", table);
-    let ext = ['_prompt.wav', '_0.wav', '_1.wav', '_2.wav', '_3.wav'];
+  // function generatePrompting(tableId) {
+  //   let table = document.getElementById(tableId);
+  //   console.log("got table ", table);
+  //   let ext = ['_prompt.wav', '_0.wav', '_1.wav', '_2.wav', '_3.wav'];
   
-    let examples = [
-        [
-            '201a21a19122da31975501c183a447db_1089_0',
-            '201a21a19122da31975501c183a447db_1089_2',
-            '201a21a19122da31975501c183a447db_2094_0',
-            '201a21a19122da31975501c183a447db_2094_2',
-        ],
-        [
-            '1ebe5c38eabb74ee9fc562f3f716dc8c_1089_0',
-            '1ebe5c38eabb74ee9fc562f3f716dc8c_1089_2',
-            '1ebe5c38eabb74ee9fc562f3f716dc8c_2094_0',
-            '1ebe5c38eabb74ee9fc562f3f716dc8c_2094_2',
-        ]
-    ];
-    for (var i = 0; i < examples[0].length; i++) {
-      generateExampleRow(table.rows[2 + i], 'data/prompting/' + examples[0][i], ext, 0)
-    }
-    for (var i = 0; i < examples[1].length; i++) {
-      generateExampleRow(table.rows[7 + i], 'data/prompting/' + examples[1][i], ext, 0)
-    }
+  //   let examples = [
+  //       [
+  //           '201a21a19122da31975501c183a447db_1089_0',
+  //           '201a21a19122da31975501c183a447db_1089_2',
+  //           '201a21a19122da31975501c183a447db_2094_0',
+  //           '201a21a19122da31975501c183a447db_2094_2',
+  //       ],
+  //       [
+  //           '1ebe5c38eabb74ee9fc562f3f716dc8c_1089_0',
+  //           '1ebe5c38eabb74ee9fc562f3f716dc8c_1089_2',
+  //           '1ebe5c38eabb74ee9fc562f3f716dc8c_2094_0',
+  //           '1ebe5c38eabb74ee9fc562f3f716dc8c_2094_2',
+  //       ]
+  //   ];
+  //   for (var i = 0; i < examples[0].length; i++) {
+  //     generateExampleRow(table.rows[2 + i], 'data/prompting/' + examples[0][i], ext, 0)
+  //   }
+  //   for (var i = 0; i < examples[1].length; i++) {
+  //     generateExampleRow(table.rows[7 + i], 'data/prompting/' + examples[1][i], ext, 0)
+  //   }
   
   }
   
